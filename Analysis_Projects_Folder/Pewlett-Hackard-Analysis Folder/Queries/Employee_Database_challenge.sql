@@ -39,7 +39,7 @@ ORDER BY COUNT(ut.title) DESC;
 
 -- Deliverable#2 -(Mentroship Eligibility Instruction 1 to 11
 SELECT DISTINCT on (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date,t.title
---INTO mentorship_eligibility 
+--INTO mentorship_eligibility -1549 mentors
 FROM employees AS e
 INNER JOIN dept_emp AS de
 	ON (e.emp_no = de.emp_no)
@@ -49,11 +49,14 @@ WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01') AND (t.to_date = '9999-01-01')
 ORDER BY e.emp_no;
 
+--Deliverable 3 - - 
+SELECT COUNT(mec.title), mec.title
+INTO mentor_eligible_count
+FROM mentorship_eligibility AS mec
+GROUP BY mec.title
+ORDER BY COUNT (mec.title) DESC;
 
-
-
-
-
+SELECT * FROM mentor_eligible_count;
 
 
 
