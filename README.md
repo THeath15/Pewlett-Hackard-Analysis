@@ -33,14 +33,22 @@ Fig.2
 
 
 To  retrieve the number of employees by their most recent job title who are about to retire, we queried and created a retiring title table  by retrieving the number of titles from unique title tables and group the table by tile and sort the count column to descending. Please see fig. 3 below.  The table returns 7 positions  that would  be impacted by the "silver tsunami"
+
 ![retiring_titles](https://user-images.githubusercontent.com/92903447/145686762-4ea8c0db-b79e-4559-8b58-1f76a160804f.png)
 Fig.3 
 
 
+To determine the employees who are eligible to participate in a mentorship program. We queried and created a Mentorship Eligibility table that hold this info. On this query we have to retrieve the emp_no, first_name, last name and birth_date from employees table , aslo  retrieved the from_date and to_date columns from department employees table and the tile from title table. Using the DISTINCT ON  statement we retrieve the first occurence of the employee number for each set of rows and join the 3 tables  on the primary key. We filter the current employee on the to_date colum  as well as birth_date column to get the employees who's birth dates  are between Jan.1, 1965, and Dec. 31, 1965. 
+This query has resulted to 1549 eligible for mentorship role. See sample run below for Fig.4
+
 <img width="446" alt="menthorship_eligibility" src="https://user-images.githubusercontent.com/92903447/145688174-67ea026a-c8b1-4af0-86bd-b1e2428533ba.png">
+Fig.4
 
 #**Summary**: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-After generating the  query count report, the "silver tsunami"  has resulted a future significant vacant rows  of **90,938** employee positions 
+After generating the  query count report, the "silver tsunami"  has resulted a future significant vacant rows  of **90,938** employee positions. 
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+The total mentorship role eligible is 1,549 based on the criteria of employees born on 1965 and the ratio of 90,938 retiree vs mentor is significant. 
+
+Recommendation/Insights:
