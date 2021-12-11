@@ -4,9 +4,9 @@
 The task is to help Bobby using SQL to build an employee database by applying data queries. modelling and analytical skills. After working on the module and creating database tables and csv files, his manager has given us 2 more assignments to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Also, we need to submit a summary report that summarizes analysis  for  the “silver tsunami” as many current employees reach retirement age.
 
 ##**Deliverables:**
-**Deliverable 1:** The Number of Retiring Employees by Title
-**Deliverable 2:** The Employees Eligible for the Mentorship Program
-**Deliverable 3:** A written report on the employee database analysis
+ - **Deliverable 1:** The Number of Retiring Employees by Title
+ - **Deliverable 2:** The Employees Eligible for the Mentorship Program
+ - **Deliverable 3:** A written report on the employee database analysis
 
 **#Resources:**
 PostgreSQL/PgAdmin
@@ -20,9 +20,11 @@ PostgreSQL/PgAdmin
 
 #**Results**: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
-![retirement_titles](https://user-images.githubusercontent.com/92903447/145686748-38b44efc-62ad-422b-8273-f08dbff0eac8.png)
 
+Fig.1 Using the ERD you created in this module as a reference,  Retirement Titles table has been created that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. On this query, some employee shows multiple titles in the database due to promotions for example. 
+![retirement_titles](https://user-images.githubusercontent.com/92903447/145686748-38b44efc-62ad-422b-8273-f08dbff0eac8.png) Fig.1
 
+Because some employees may have multiple titles in the database—for example, due to promotions—you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee. Then, use the COUNT() function to create a final table that has the number of retirement-age employees by most recent job title.
 ![unique_titles](https://user-images.githubusercontent.com/92903447/145686768-6565d811-6d3c-42d9-82e6-c8e7ec6811f7.png)
 
 
