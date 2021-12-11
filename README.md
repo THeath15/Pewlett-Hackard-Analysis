@@ -21,11 +21,15 @@ PostgreSQL/PgAdmin
 #**Results**: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
 
-Fig.1 Using the ERD you created in this module as a reference,  Retirement Titles table has been created that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. On this query, some employee shows multiple titles in the database due to promotions for example. 
-![retirement_titles](https://user-images.githubusercontent.com/92903447/145686748-38b44efc-62ad-422b-8273-f08dbff0eac8.png) Fig.1
+Fig.1 Using the ERD you created in this module as a reference,  Retirement Titles table has been created that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. On this query, some employee shows multiple titles in the database due to promotions for example and need to be removed as duplicates. 
 
-Because some employees may have multiple titles in the database—for example, due to promotions—you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee. Then, use the COUNT() function to create a final table that has the number of retirement-age employees by most recent job title.
+![retirement_titles](https://user-images.githubusercontent.com/92903447/145686748-38b44efc-62ad-422b-8273-f08dbff0eac8.png)
+Fig.1
+
+To remove the duplicate info , we use the DISTINCT ON statement  on our query to create a table that contains the most recent title of each employee. Then,we  use the COUNT() function to create a final table that has the number of retirement-age employees by most recent job title and created a table for unique_titles that holds this info. See Fig.2 below.  This query has generated a significant number of vacant position count of ** 90,938 **.
+
 ![unique_titles](https://user-images.githubusercontent.com/92903447/145686768-6565d811-6d3c-42d9-82e6-c8e7ec6811f7.png)
+Fig.2
 
 
 <img width="446" alt="menthorship_eligibility" src="https://user-images.githubusercontent.com/92903447/145688174-67ea026a-c8b1-4af0-86bd-b1e2428533ba.png">
