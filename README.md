@@ -44,11 +44,21 @@ This query has resulted to 1549 eligible for mentorship role. See sample run bel
 <img width="446" alt="menthorship_eligibility" src="https://user-images.githubusercontent.com/92903447/145688174-67ea026a-c8b1-4af0-86bd-b1e2428533ba.png">
 Fig.4
 
-#**Summary**: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+#**Summary**: 
+
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 After generating the  query count report, the "silver tsunami"  has resulted a future significant vacant rows  of **90,938** employee positions. 
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-The total mentorship role eligible is 1,549 based on the criteria of employees born on 1965 and the ratio of 90,938 retiree vs mentor is significant. 
+The total mentorship role eligible is 1,549 based on the criteria of employees born on 1965 and the ratio of 90,938 retiree vs mentor is higly significant. 
 
 Recommendation/Insights:
+
+We could compare the count by titles for  mentor_eligible employees and retirees  to see if the recent criteria is scalable. The query resulted below with only 6 affected positions compared  to 7 of those born on 1965 and the number is quite reasonable.   Notice that there is no manager on recent query and this could be something to think if a manager position is needed to fill in.  
+
+
+![retiring_titles](https://user-images.githubusercontent.com/92903447/145691885-fad3b4e5-9dae-4ba4-89da-a9923f90bc54.png) <img width="127" alt="mentor_eligible_count" src="https://user-images.githubusercontent.com/92903447/145691877-ee1a71ab-efb3-4241-b69c-a8b5d7c71af6.png">
+
+Generating a new list of potential mentor eligbile roles by adjusting the date criteria of those employees aging 30 to 40 from the date they were hired. 
+
+
