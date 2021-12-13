@@ -18,8 +18,7 @@ PostgreSQL/PgAdmin
  - salaries.csv
  - titles.csv
 
-# **Results:** Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
-
+# **Results:** 
 
 Fig.1 Using the ERD you created in this module as a reference,  Retirement Titles table has been created that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955. On this query, some employee shows multiple titles in the database due to promotions for example and need to be removed as duplicates. 
 
@@ -44,7 +43,7 @@ This query has resulted to 1549 eligible for mentorship role. See sample run bel
 <img width="446" alt="menthorship_eligibility" src="https://user-images.githubusercontent.com/92903447/145688174-67ea026a-c8b1-4af0-86bd-b1e2428533ba.png">
 Fig.4
 
-# **Summary: **
+# **Summary:**
 
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 After generating the  query count report, the "silver tsunami"  has resulted a future significant vacant rows  of **90,938** employee positions. 
